@@ -1,0 +1,70 @@
+#contactBox
+{
+  position: relative;
+  background: #ffb2b2;
+  height: 350px;
+  top: 475px;
+  width: 400px; 
+}
+/*
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+*/
+#at{
+  background: linear-gradient(182deg, #ffb2b2,  #f0ead6);
+  background-size: 600% 600%;
+  border-radius: 25px;
+  color: #fd0000;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  transform: rotate(-15deg);
+  right: 202px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: AnimationName 9s infinite;
+  -moz-animation: AnimationName 5s infinite;
+  -o-animation: AnimationName 5s infinite;
+  animation: AnimationName 9s infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+button
+{
+  background-color: #6BE7D9;
+  left: 65%; 
+  position: absolute; 
+  transform: translate(-50%, 5%);
+  box-shadow: 5px 5px;
+}
+#linkFont
+{
+
+  font-size: 12px;
+}
+ul
+{
+  font-size: 20px;
+  padding: 0px 50px 0px 90px;
+}

@@ -1,0 +1,125 @@
+.goToHost
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 26px;
+  top: 47px;
+  left: 10%;
+}
+.extMenu
+{
+}
+.iframe
+{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  left: 28%;
+  height: 1000px; 
+  top: 50px;
+  width: 550px;
+  border: none;
+}
+.spacer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuItems
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  transform: translate(-65%, 0%);
+  left: 50%;
+}
+.menu
+{
+    height: 550px;
+}
+.btnArea
+{
+  transform: translate(-23%, 140%);  
+  left: 100%;
+}
+.itemArea
+{
+  position: absolute;
+  width: 300px;
+  left: 32%;
+}
+.itemBtn
+{
+  position: relative;
+  transform: translate(-50%, -50%);  
+  left: 50%;
+  width: 300px;
+  margin: 25px;
+  font-family: Hack, monospace;
+}
+.web3Btn
+{
+  position: relative;
+  width: 50px;
+  height: 150px;
+  background-color: #f86aff;
+  font-family: Hack, monospace;
+  margin-right: 50px;
+}
+.uniBtn
+{
+  position: relative;
+  width: 50px;
+  height: 175px;
+  background-color: #f86aff;
+  font-family: Hack, monospace;
+  margin-right: 50px;
+}
+.hobbyBtn
+{
+  position: relative;
+  width: 50px;
+  height: 150px;
+  background-color: #f86aff;
+  font-family: Hack, monospace;
+}
+.web3Btn:hover
+{
+  background-color: cornsilk;
+  top: 50px;
+}
+.uniBtn:hover
+{
+  background-color: cornsilk;
+  top: -35px;
+}
+.hobbyBtn:hover
+{
+  background-color: cornsilk;
+  top: 40px;
+}
+.itemBtn:hover
+{
+  background-color: lightcyan;
+}
+.goToHost:hover
+{
+  background-color: rgb(255, 0, 221);
+}
+.ellipsis
+{
+  font-size: 12px;
+  color: rgb(255, 0, 221);
+}
+.href
+{
+  font-size: 14px;
+}

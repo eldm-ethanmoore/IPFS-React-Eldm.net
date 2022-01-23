@@ -1,0 +1,19 @@
+.menuBlogSpace
+{
+    height: 300px;
+}
+.spacerBlog
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeText
+{
+  color: blue;
+  width: 370px;
+  align-content: center;
+  box-shadow: 5px 5px 5px 5px;
+  padding: 30px;
+}

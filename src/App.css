@@ -1,0 +1,207 @@
+.right
+{
+  position: relative;
+  left: 5%;
+}
+.centerTipHidden
+{
+  position: absolute;
+  transform: translate(-50%, -50%); 
+  left: 20%;
+  top: -97.5px;
+}
+.centerTip
+{
+  font-family: Hack, monospace;
+  position: absolute;
+  color:  rgb(252, 71, 0);
+  font-size: 14px;
+  top: 310px;
+  transform: translate(-50%, -50%);  
+  left: 50%;
+  width: 300px;
+  background-color: gray;
+  padding: 7.5px;
+  border-radius: 25px;
+  border-style: dotted;
+  border-color: orange;
+}
+.tip .tipText
+{
+  font-family: Hack, monospace;
+  position: absolute;
+  color:  rgb(0,255,169);
+  top: -200px;
+  transform: translate(-50%, -50%); 
+  left: 50%;
+  border-style: solid;
+  border-radius: 5px;
+  animation: rotation 5s linear infinite;
+}
+.tipText
+{
+  font-family: Hack, monospace;
+  visibility: hidden;
+  width: 275px;
+  height: 25px;
+  background-color: #555;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tip tipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.centerTip:hover{
+  background-color: #f0ead6;
+}
+.tip:hover .tipText {
+  visibility: visible;
+  opacity: 1;
+}
+#pathInfo
+{
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 130%;
+}
+a {
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+    padding: 0.25rem .6rem;
+    color: #30261e;
+}
+
+#IntroInfo{
+    position: absolute; 
+    left: 50%; 
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#ContactInfo {
+    position: absolute; 
+    left: 50%; 
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+#ProjectsInfo {
+    position: absolute; 
+    left: 14%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#BlogInfo {
+    position: absolute; 
+    left: 90%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainNav
+{
+    position: absolute;
+    background: #78a278;
+    height: 150px;
+    top: 125px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Hack, monospace;
+}
+
+#clock
+{
+    position: absolute;
+    background: rgb(243, 235, 128);
+    height: 60px;
+    top: 250px;
+    width: 365px;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-family: Hack, monospace;
+}
+
+.builtWith
+{
+    position: absolute; 
+    background: #9a78a2;
+    top: 400px;
+    height: 130px;
+    width: 295px;
+    font-family: Hack, monospace;
+}
+
+#LaunchInfo
+{
+  position: absolute; 
+  background: #9fbdc5;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px;
+  font-size: 24px;
+  height: 30px;
+  width: 250px;
+  top: 350px;
+  font-family: Hack, monospace;
+}
+
+
+.box 
+{
+    position: relative;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px;
+}
+
+#title {
+    font-size: 36px;
+    color: #30261e;
+    position: absolute; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    top: 20%;
+}
+
+#reactInfo
+{
+  animation: threesixtyrotation 5s linear infinite;
+}
+@keyframes rotation 
+{
+  0%{transform: rotate(0deg);}
+  25%{transform: rotate(2deg);}
+  50%{transform: rotate(0deg);}
+  75%{transform: rotate(-2deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes threesixtyrotation
+{
+  0%{transform: rotate(0deg);}
+  25%{transform: rotate(90deg);}
+  50%{transform: rotate(180deg);}
+  75%{transform: rotate(270deg);}
+  100%{transform: rotate(360deg);}
+}
+html
+{
+    background-color: #f0ead6;
+}
