@@ -50,9 +50,9 @@ function App() {
       </div>
       <Clock /> 
       <div className='builtWith box'>
-        <a href='https://fleek.co/' target='_blank' >Deployed With: <img alt="fleek logo" id='fleekInfo' width='75px' height='30px' src="src/assets/fleekLogo.png" /></a>
-        <a href='https://ipfs.io/' target='_blank'>Hosted On: <img alt="ipfs logo" id='ipfsInfo' width='33px' height='33px' src='src/assets/ipfsLogo.png' /> && <img alt="github logo" href='' width='30px' height='30px' src='src/assets/githubLogo.png' /></a>
-        <a href='https://reactjs.org/' target='_blank'>Front-End: <img alt="react logo" width='30px' height='25px' id='reactInfo' src='src/assets/reactLogo.png'></img></a>
+        <a href='https://fleek.co/' target='_blank' >Deployed With: <img alt="fleek logo" id='fleekInfo' width='75px' height='30px' src="https://gateway.pinata.cloud/ipfs/QmQJvTEiU2Dprt6Ktfpcv5dioPpDsHrudyLwKUFBV6EXgk?preview=1" /></a>
+        <a href='https://ipfs.io/' target='_blank'>Hosted On: <img alt="ipfs logo" id='ipfsInfo' width='33px' height='33px' src='https://gateway.pinata.cloud/ipfs/QmboP5xirL86WcQPbhAmtEYDmHwxxSzU6CxwG5Bumhy5NT?preview=1' /> && <img alt="github logo" href='' width='30px' height='30px' src='https://gateway.pinata.cloud/ipfs/QmThiNKmY4ZEjguureCbM9pApK6VuXq9TqERpNuDeXWWVS?preview=1' /></a>
+        <a href='https://reactjs.org/' target='_blank'>Front-End: <img alt="react logo" width='30px' height='25px' id='reactInfo' src='https://gateway.pinata.cloud/ipfs/Qmajbzt8coDNxXKSZRX7oxcQZfsSEJVQHAZpu3sYKT1zKs?preview=1'></img></a>
       </div>
     </>
   );
