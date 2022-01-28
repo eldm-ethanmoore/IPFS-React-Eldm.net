@@ -9,7 +9,7 @@ function generateSitemap() {
     return (
       new Sitemap(router)
           .build("https://www.eldm.net")
-          .save("./public/sitemap.xml")
+          .save("/workspace/public/sitemap.xml")
     );
 }
 
