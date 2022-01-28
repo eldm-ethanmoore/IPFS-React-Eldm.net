@@ -1,6 +1,4 @@
-require("babel-register")({
-  presets: ["es2015", "react"]
-});
+require("babel-register");
  
 const router = require("/workspace/src/SitemapRoutes").default;
 const Sitemap = require("react-router-sitemap").default;
