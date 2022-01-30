@@ -5,8 +5,7 @@ import Clock from './Clock';
 import Helmet from 'react-helmet';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
- /*
- */ 
+ 
   return (
     <>
       <Helmet>
