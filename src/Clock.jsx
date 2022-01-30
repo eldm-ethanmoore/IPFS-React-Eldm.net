@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import './App.css';
 import {format} from 'date-fns';
 function Clock() {
@@ -13,11 +13,11 @@ function Clock() {
   }, []); 
   
    return (
-     <>
+     <Fragment>
       <div className="box" id='clock'>
         <h1>{time} <span className="right">CST |</span></h1>
       </div>
-     </>
+     </Fragment>
    );
 }
 export default Clock;

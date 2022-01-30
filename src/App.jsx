@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 
 import './App.css';
 import Clock from './Clock';
@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
  
   return (
-    <>
+    <Fragment>
       <Helmet>
         <title>Eldm.net!</title>
         <meta name="description" content="Personal and Professional Website of Eldm" />
@@ -53,7 +53,7 @@ function App() {
         <a href='https://ipfs.io/' target='_blank'>Hosted On: <img alt="ipfs logo" id='ipfsInfo' width='33px' height='33px' src='https://gateway.pinata.cloud/ipfs/QmboP5xirL86WcQPbhAmtEYDmHwxxSzU6CxwG5Bumhy5NT?preview=1' /> && <img alt="github logo" href='' width='30px' height='30px' src='https://gateway.pinata.cloud/ipfs/QmThiNKmY4ZEjguureCbM9pApK6VuXq9TqERpNuDeXWWVS?preview=1' /></a>
         <a href='https://reactjs.org/' target='_blank'>Front-End: <img alt="react logo" width='30px' height='25px' id='reactInfo' src='https://gateway.pinata.cloud/ipfs/Qmajbzt8coDNxXKSZRX7oxcQZfsSEJVQHAZpu3sYKT1zKs?preview=1'></img></a>
       </div>
-    </>
+    </Fragment>
   );
 }
 

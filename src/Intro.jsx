@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import './App.css';
 import './css/Intro.css'
 import Clock from './Clock';
 import Helmet from 'react-helmet';
 function Intro() {
    return (
-     <>
+     <Fragment>
       <Helmet>
         <title>Who am I?</title>
         <meta name="description" content="Hardcore Developer interested in web3 and creative potential" />
@@ -32,7 +32,7 @@ function Intro() {
               My ambitions include keeping this website and my repositories up to date. Furthering my education to graduation. Specialize deeper into smart contracts, blockchain related technologies, and continue to learn more about general computer science concepts.
             </p>
       </div>
-     </>
+     </Fragment>
    );
 }
 export default Intro;

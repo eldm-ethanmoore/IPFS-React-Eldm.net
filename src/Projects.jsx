@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import './App.css';
 import './css/Project.css'
 import './css/Blog.css'
@@ -121,7 +121,7 @@ function Projects() {
     if(props.value.ButtonType === 1)
     {
       return(
-        <>
+        <Fragment>
         <button className="itemBtn" value={props.value.Learned} onClick={handleClickLearned}>
           {props.value.title}
         </button>
@@ -130,12 +130,12 @@ function Projects() {
           href("{props.value.CID.substring(0,5)} <span className="ellipsis">…</span>");
         </a>
         </button>
-        </>
+        </Fragment>
       );
     } 
     if(props.value.ButtonType === 2){
        return(
-        <>
+        <Fragment>
         <button className="itemBtn" value={props.value.Learned} onClick={handleClickLearned}>
           {props.value.title}
         </button>
@@ -144,11 +144,11 @@ function Projects() {
           Github("{props.value.CID.substring(35, 41)} <span className="ellipsis">…</span>");
         </a>
         </button>
-        </>
+        </Fragment>
       );     
     } else {
       return(
-        <>
+        <Fragment>
         <button className="itemBtn" value={props.value.Learned} onClick={handleClickLearned}>
           {props.value.title}
         </button>
@@ -157,12 +157,12 @@ function Projects() {
           href("{props.value.CID.substring(0,5)} <span className="ellipsis">…</span>");
         </a>
         </button>
-        </>
+        </Fragment>
       );
     }
   }
    return (
-     <>
+     <Fragment>
       <Helmet>
         <title>My Projects!</title>
         <meta name="description" content="Personal and Professional Projects of Eldm" />
@@ -199,7 +199,7 @@ function Projects() {
        <iframe className="iframe" src={`https://gateway.pinata.cloud/ipfs/${learnedSelected}?preview=1`}> </iframe>
       </div>
        </div>
-     </>
+     </Fragment>
    );
 }
 export default Projects;
