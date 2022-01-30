@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import './css/Contact.css'
 import Clock from './Clock';
@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 const Contact = () => {
 
    return (
-     <Fragment>
+     <>
       <Helmet>
         <title>Contact Me!</title>
         <meta name="description" content="Eldm's contact details." />
@@ -29,7 +29,7 @@ const Contact = () => {
           <li>Website<button><a id="linkFont" href="http://eldm.net" target="_blank">eldm.net</a></button></li>
         </ul>
       </div>
-     </Fragment>
+     </>
    );
 }
 export default Contact;

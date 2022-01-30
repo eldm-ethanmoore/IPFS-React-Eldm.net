@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import './css/Intro.css'
 import './css/Blog.css'
@@ -76,7 +76,7 @@ function Blog() {
     );
   }
    return (
-     <Fragment>
+     <>
       <Helmet>
         <title>Blog!</title>
         <meta name="description" content="Blog of Eldm" />
@@ -105,7 +105,7 @@ function Blog() {
       <div className="spacer">
        <iframe className="iframeBlog" id="post" src={`https://gateway.pinata.cloud/ipfs/${selectedArticle}?preview=1`}> </iframe> 
       </div>
-     </Fragment>
+     </>
    );
 }
 export default Blog;

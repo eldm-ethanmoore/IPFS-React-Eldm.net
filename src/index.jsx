@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import useKeyboardShortcut from 'use-keyboard-shortcut';
 import ReactDOM from 'react-dom'
 import './index.css'
