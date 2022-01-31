@@ -5,10 +5,11 @@
 .table
 {
   position: absolute;
-  width: 500px;
+  width: 410px;
   top: 450px;
   transform: translate(-50%, -50%);  
   left: 55%;
+  
 }
 .menu
 {
@@ -50,14 +51,16 @@
 
 .iframeBlog
 {
-  position: absolute;
+  position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   height: 700px;
-  transform: translate(-50%, -10%);
-  left: 55%;
-  top: 660px;
+  padding-top: 50px;
   width: 550px;
   border: none;
+  
 }
 
 td

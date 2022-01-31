@@ -195,7 +195,9 @@ function Projects() {
       </div>
       <div className="extMenu">
       <div className="menuItems">
+        <div className="centerButtons">
         {selectedMenu.map(item => <MenuItems value={item} />)}
+        </div>
        <iframe className="iframe" src={`https://gateway.pinata.cloud/ipfs/${learnedSelected}?preview=1`}> </iframe>
       </div>
        </div>

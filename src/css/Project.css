@@ -1,3 +1,7 @@
+.centerButtons
+{
+  width: 300px;
+}
 .goToHost
 {
   position: relative;
@@ -6,8 +10,7 @@
   align-content: center;
   flex-wrap: wrap;
   height: 26px;
-  top: 47px;
-  left: 10%;
+  top: -35px;
 }
 .extMenu
 {
@@ -19,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  left: 28%;
+  left: 25%;
   height: 1000px; 
   top: 50px;
   width: 550px;
@@ -47,7 +50,10 @@
 }
 .btnArea
 {
-  transform: translate(-23%, 140%);  
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-65%, 180%);  
   left: 100%;
 }
 .itemArea

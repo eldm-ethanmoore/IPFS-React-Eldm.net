@@ -81,7 +81,7 @@
     top: 130%;
 }
 a {
-    font-size: 22px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     padding: 0.25rem .6rem;
@@ -122,7 +122,7 @@ a {
     background: #78a278;
     height: 150px;
     top: 125px;
-    width: 400px;
+    width: 350px;
     font-size: 20px;
     font-family: Hack, monospace;
 }
@@ -173,7 +173,7 @@ a {
 }
 
 #title {
-    font-size: 36px;
+    font-size: 30px;
     color: #30261e;
     position: absolute; 
     left: 50%; 
@@ -205,3 +205,4 @@ html
 {
     background-color: #f0ead6;
 }
+/*#f2f6fc*/
