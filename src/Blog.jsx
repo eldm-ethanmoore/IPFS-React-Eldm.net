@@ -9,7 +9,7 @@ function Blog() {
     [
       {
         "title": "1_Welcome!",
-        "CID": "QmanRiykAupP3g2ikFnyegJoSEC87idbJRVrBT27nJSHLN"
+        "CID": "Qmbo8EEpoooWuvYeTzQwg9x4tvKBwdMjQKQa5kSX6S3JaE"
       }
     ]
   );
