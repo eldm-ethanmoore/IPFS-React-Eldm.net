@@ -1,34 +1,22 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import './App.css';
 import Clock from './Clock';
 import Helmet from 'react-helmet';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
 
-const AsyncImage = (props) => {
-  	const [loadSrc, setLoadSrc] = useState(null);
-  	useEffect(() => {
-      	setLoadSrc(null);
-      	if (props.src) {
-          	const handleLoad = () => {
-            	setLoadSrc(props.src);
-            };
-            const image = new Image();
-            image.addEventListener('load', handleLoad);
-          	image.src = props.src;
-            return () => {
-              	image.removeEventListener('load', handleLoad);
-            };
-        }
-    }, [props.src]);
-  	if (loadSrc === props.src) {
-        return (
-            <img {...props} />
-        );
-    }
-  	return null;
-};
+  const RenderImg = React.lazy(() => import('./scripts/RenderImg'));
+
+  function GetImages(props)
+  {
+    return(
+      <>
+        <Suspense fallback={<div className="loadingText">Loading...</div>}>
+          <RenderImg image={props.obj} />
+        </Suspense>
+      </>
+    );
+  } 
 
 return (
     <>
@@ -73,12 +61,12 @@ return (
       </div>
       <Clock /> 
       <div className='builtWith box'>
-        <a href='https://fleek.co/' target='_blank' >Deployed With: <AsyncImage alt="fleek logo" id='fleekInfo' width='75px' height='30px' src="https://gateway.pinata.cloud/ipfs/QmQJvTEiU2Dprt6Ktfpcv5dioPpDsHrudyLwKUFBV6EXgk?preview=1" /></a>
-        <a href='https://ipfs.io/' target='_blank'>Hosted On: <AsyncImage alt="ipfs logo" id='ipfsInfo' width='33px' height='33px' src='https://gateway.pinata.cloud/ipfs/QmboP5xirL86WcQPbhAmtEYDmHwxxSzU6CxwG5Bumhy5NT?preview=1' /> && <AsyncImage alt="github logo" href='' width='30px' height='30px' src='https://gateway.pinata.cloud/ipfs/QmThiNKmY4ZEjguureCbM9pApK6VuXq9TqERpNuDeXWWVS?preview=1' /></a>
-        <a href='https://reactjs.org/' target='_blank'>Front-End: <AsyncImage alt="react logo" width='30px' height='25px' id='reactInfo' src='https://gateway.pinata.cloud/ipfs/Qmajbzt8coDNxXKSZRX7oxcQZfsSEJVQHAZpu3sYKT1zKs?preview=1'/></a>
+        <a href='https://fleek.co/' target='_blank' >Deployed With: {<GetImages obj={0} />}</a>
+        <a href='https://ipfs.io/' target='_blank'>Hosted On: {<GetImages obj={1}/>} && {<GetImages obj={2}/>}</a>
+        <a href='https://reactjs.org/' target='_blank'>Front-End: {<GetImages obj={3}/>}</a>
       </div>
     </>
   );
 }
-
+      
 export default App;

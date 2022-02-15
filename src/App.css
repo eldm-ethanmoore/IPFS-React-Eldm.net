@@ -1,3 +1,11 @@
+.loadingText
+{
+  font-family: Hack, monospace;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 14px;
+  color:  rgb(252, 71, 0);
+}
 .right
 {
   position: relative;
