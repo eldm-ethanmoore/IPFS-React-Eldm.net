@@ -17,7 +17,17 @@ function App() {
       </>
     );
   } 
-
+/*
+      <div className="tip centerTip">
+        Mouse Over For Keyboard Navigation!
+        <div className="centerTipHidden">
+        <span className="tipText">
+          (Select (W a s d || H j k l))
+          (GoTo (Enter)
+        </span>
+        </div>
+      </div>
+*/
 return (
     <>
       <Helmet>
@@ -50,15 +60,7 @@ return (
           content="https://gateway.pinata.cloud/ipfs/QmS5xkGUpDppC1DQbkw5t8qP7nzzwbKAmSbRRUDDVv3FKn?preview=1"
         />
       </Helmet>
-      <div className="tip centerTip">
-        Mouse Over For Keyboard Navigation!
-        <div className="centerTipHidden">
-        <span className="tipText">
-          (Select (W a s d || H j k l))
-          (GoTo (Enter)
-        </span>
-        </div>
-      </div>
+
       <Clock /> 
       <div className='builtWith box'>
         <a href='https://fleek.co/' target='_blank' >Deployed With: {<GetImages obj={0} />}</a>
